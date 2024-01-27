@@ -30,9 +30,6 @@ for gpu in gpus:
 # Set path
 default_path = pystow.join("DECIMER-V2")
 
-# download models to a default location
-utils.ensure_model(default_path=default_path)
-
 # Load important pickle files which consists the tokenizers and the maxlength setting
 tokenizer = pickle.load(
     open(

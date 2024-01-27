@@ -30,16 +30,6 @@ for gpu in gpus:
 # Set path
 default_path = pystow.join("DECIMER-V2")
 
-# Load important pickle files which consists the tokenizers and the maxlength setting
-tokenizer = pickle.load(
-    open(
-        os.path.join(
-            default_path.as_posix(), "DECIMER_model", "assets", "tokenizer_SMILES.pkl"
-        ),
-        "rb",
-    )
-)
-
 
 def main():
     """This function take the path of the image as user input and returns the

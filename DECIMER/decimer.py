@@ -99,10 +99,6 @@ def detokenize_output_add_confidence(
     return decoded_prediction_with_confidence
 
 
-# Load DECIMER model_packed
-DECIMER_V2 = tf.saved_model.load(default_path.as_posix() + "/DECIMER_model/")
-
-
 def predict_SMILES(image_path: str) -> str:
     """This function takes an image path (str) and returns the SMILES
     representation of the depicted molecule (str).
